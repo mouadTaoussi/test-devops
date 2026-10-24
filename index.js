@@ -8,7 +8,9 @@ const message = 'This is a test message for the DevOps pipeline.';
 console.log(message);
 
 function add(a, b) {
-  return a + b;
+    if(a){
+        return a + b;
+    }
 }
 
 add(2, 3); // This will return 5
